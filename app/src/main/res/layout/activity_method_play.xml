@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    tools:context="com.linhcn.generaldeputy.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_logo"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+        <ImageView
+            android:src="@drawable/logo_game"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/rl_logo"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageButton
+            android:background="@drawable/background_button_play_machine"
+            android:id="@+id/btn_play_machine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:background="@drawable/background_button_play_bluetooth"
+            android:id="@+id/btn_play_bluetooth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_play_machine"
+            android:layout_marginTop="5dp"/>
+        <ImageButton
+            android:background="@drawable/background_button_resume"
+            android:id="@+id/btn_resume"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_play_bluetooth"
+            android:layout_marginTop="5dp" />
+        <ImageButton
+            android:background="@drawable/icon_exit_vn"
+            android:id="@+id/btn_exit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_resume"
+            android:layout_marginTop="5dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>
